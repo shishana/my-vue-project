@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="28px" viewBox="0 0 18 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>带阴影落点</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-21">
+            <ellipse id="Oval-Copy-3" fill="#636363" opacity="0.18" cx="9" cy="26.5" rx="5" ry="1.5"></ellipse>
+            <path d="M3.01140915,15.7632487 C1.16353994,14.1472963 0,11.7950988 0,9.17647059 C0,4.30336985 4.02943725,0 9,0 C13.9705627,0 18,4.30336985 18,9.17647059 C18,11.7967608 16.8349826,14.150282 14.9850716,15.7663247 C13.8018919,17.061555 12.681868,18.6186864 11.625,20.4377189 C10.563688,22.2644001 9.68868805,24.1441348 9,26.0769231 C8.4642389,24.2942189 7.7142389,22.573065 6.75,20.9134615 C5.78814997,19.2579697 4.54195302,17.541232 3.01140915,15.7632487 Z" id="Combined-Shape-Copy" fill="#F8622E"></path>
+        </g>
+    </g>
+</svg>

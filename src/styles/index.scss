@@ -1,0 +1,242 @@
+@import './element-variables.scss';
+
+.layouts-outside-div{
+  height: 100%;
+}
+
+.iconfont{
+  font-family: 'iconfont';
+  font-size: 14px !important;
+  font-style: normal;
+}
+.iconfont-symbol {
+  width: 16px;
+  height: 16px;
+  // vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+/*--  flex horizontal(横向)铺开，铺开方式为 around，垂直对其方式为 [center, top, bottom]  --*/
+@mixin flex-horizontal-around-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flex-horizontal-around-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+@mixin flex-horizontal-around-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: bottom;
+}
+
+/*-- flex horizontal(横向)铺开，铺开方式为 between，垂直对其方式为 [center, top, bottom] --*/
+
+@mixin flex-horizontal-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-horizontal-between-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+@mixin flex-horizontal-between-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: bottom;
+}
+
+/*-- flex horizontal(横向)铺开，铺开方式为 start，垂直对其方式为 [center, top, bottom] --*/
+
+@mixin flex-horizontal-start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flex-horizontal-start-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: top;
+}
+@mixin flex-horizontal-start-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: bottom;
+}
+
+/*-- flex vertical(垂直)铺开，铺开方式为 between，水平对其方式为 [center, top, bottom] --*/
+@mixin flex-vertical{
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-vertical-around-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-vertical-around-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: top;
+}
+@mixin flex-vertical-around-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: bottom;
+}
+
+/*-- flex vertical(垂直)铺开，铺开方式为 between，水平对其方式为 [center, top, bottom] --*/
+
+@mixin flex-vertical-between-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flex-vertical-between-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: top;
+}
+@mixin flex-vertical-between-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: bottom;
+}
+@mixin flex-auto {
+  flex: auto;
+}
+
+
+$header-bar-height: 60px;
+$content-area-max-width: 1200px;
+$content-area-min-width: 992px;
+
+$default-text-color: #000; // 默认文字颜色
+$sedondary-text-color: #666666; // 灰色文字
+$tertiary-text-color: #999;  // 灰色文字-更浅
+
+$header-bg-color: #3587F6; // 头部背景色
+$header-text-color: #fff; // 头部字体颜色
+
+$default-text-color-nav: #282E3C; // 菜单未激活的字体颜色
+$default-text-inverse-color: #3080FE; // 菜单激活的字体颜色
+$primary-bg-color-nav: #fff; // 菜单背景色
+$primary-bg-color-nav-act: #E9F2FF; // 菜单激活背景色
+
+$primary-color: $--color-primary; // 页面主色：字体 提交类按钮背景，取自element的样式，改变后需要编译element的主题
+$primary-bg-color: #F5F7FA; // 页面最底层背景色
+$box-bg-color: #fff; // 页面主内容区域的背景色
+$box-title-bg-color: #FAFAFA; // 页面主内容区域标题的背景色
+
+
+$box-border-color: rgb(217,217,217); // 边框颜色
+$box-border-color-light: rgb(236, 236, 236); // 更浅的边框颜色
+
+$disable-text-color: #666;
+$primary-bg-inverse-color: #fff;
+$secondary-bg-color: #EDF3F6;
+$tertiary-bg-color: #dee2e8;
+$seprator-line-color: #DAE4E7;
+$secondary-hover-bg-color: #F6F7FB;
+
+$default-var-bg-color: #F0F2F5;
+$editting-var-border-color: #f56c6c;
+$bound-var-bg-color: #fbc3c3;
+$box-shadow-color: #aaa;
+
+$base-text-color: #525252;
+$base-bg-color-lighter: #DEE0E3;
+
+/**
+* global el-ui css
+*/
+.el-dialog{
+  max-width: 1080px;
+  min-width: 600px;
+  .el-dialog__header{
+    span{
+      font-size: 16px !important;
+      margin-left: 0px !important;
+    }
+    .el-dialog__headerbtn{
+      margin-right: 0px !important;
+    }
+  }
+  //.el-dialog__body{
+  //  padding: 15px 0px !important;
+  //}
+  .el-dialog__footer{
+    .dialog-footer{
+      // margin-right: 20px !important;
+    }
+  }
+}
+
+.el-message-box{
+  .el-message-box__header{
+    .el-message-box__title{
+      font-size: 16px !important;
+    }
+  }
+  .el-message-box__content{
+    font-size: 12px !important;
+  }
+  .el-message-box__btns{
+    .el-button{
+      padding: 7px 15px !important;
+    }
+  }
+}
+
+.custom-tooltip.el-tooltip__popper.is-light{
+  border:none !important;
+  box-shadow: 0 1px 5px $box-shadow-color !important;
+  font-size:12px !important;
+  font-family: sans-serif !important;
+  font-weight: 200 !important;
+  line-height: 1.2 !important;
+  min-width: 50px !important;
+  color: $disable-text-color !important;
+  text-align: center !important;
+  .popper__arrow{
+    border-top-color: $box-border-color !important;
+    border-top-width: 6px !important;
+  }
+  .popper__arrow::after{
+    border-top-color: #fff !important;
+    margin-left: -5px !important;
+    margin-top: -5px !important;
+  }
+}
+.cus-shadow{
+  // box-shadow: 0 1px 4px 0 rgba(0,21,41,0.12);
+}
+// 超出显示省略号
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+// 设置scrollbar的样式
+::-webkit-scrollbar{
+  width: 6px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgba(144, 147, 153, 0.3);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}

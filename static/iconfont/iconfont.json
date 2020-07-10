@@ -1,0 +1,107 @@
+{
+  "id": "1879131",
+  "name": "智能网格预报预测系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15284427",
+      "name": "个例",
+      "font_class": "geli",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "15284428",
+      "name": "个例（未选中）",
+      "font_class": "geliweixuanzhong",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "15284430",
+      "name": "降水量历史图",
+      "font_class": "jiangshuilianglishitu",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "15284431",
+      "name": "降水预测",
+      "font_class": "jiangshuiyuce",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "15284433",
+      "name": "日期",
+      "font_class": "riqi",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "15284434",
+      "name": "历史资料",
+      "font_class": "lishiziliao",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "15284435",
+      "name": "删除（默认状态）",
+      "font_class": "shanchumorenzhuangtai",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "15284436",
+      "name": "删除（点击状态）",
+      "font_class": "shanchudianjizhuangtai",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "15284437",
+      "name": "收缩",
+      "font_class": "shousuo",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "15284438",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "15284439",
+      "name": "显示设置",
+      "font_class": "xianshishezhi",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "15284440",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "15284441",
+      "name": "展开",
+      "font_class": "zhankai",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "15284442",
+      "name": "相似个例",
+      "font_class": "xiangsigeli",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    }
+  ]
+}
