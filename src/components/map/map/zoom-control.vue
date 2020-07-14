@@ -447,6 +447,7 @@ export default {
       this.controlHide()
       htmlToJpg.getLeafletImage('.mc').then((pageData) => {
         this.controlShow()
+        console.log(pageData)
       }).catch(err => {
         this.controlShow()
         console.error(err)

@@ -61,6 +61,7 @@ function configMap () {
   var _map = map
   var _geoJsonlayer = geoJsonlayer
   var _geoJsonOptions = geoJsonOptions
+  // eslint-disable-next-line no-unused-vars
   map.on('zoomend', function (e) {
     if (_map && _geoJsonlayer) {
       if (_map.getZoom() >= _geoJsonOptions.visibleLevel) {
@@ -224,6 +225,7 @@ function uGeoJSON (options) {
 
   var uGLayer = L.uGeoJSONLayer(geoJsonOptions)
   configLayer(uGLayer)
+  // eslint-disable-next-line no-unused-vars
   uGLayer.on('add', function (e) {
     // console.log('layer added', e, e.target._map)
   })
