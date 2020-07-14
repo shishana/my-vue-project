@@ -19,7 +19,8 @@ const install = (Vue, mapKeys = ['$layerManager']) => {
   Vue.mixin({
     beforeCreate () {
       for (const key in lms) {
-        if (lms.hasOwnProperty(key)) {
+        // if (lms.hasOwnProperty(key)) {
+        if (Object.prototype.hasOwnProperty.call(lms, key)) {
           // 可以在其他组件上监听图例的变化
           Vue.util.defineReactive(this, key + 'Legend', lms[key].legend)
         }
@@ -28,7 +29,8 @@ const install = (Vue, mapKeys = ['$layerManager']) => {
   })
   // 将地图管理器加在Vue的原型上
   for (const key in lms) {
-    if (lms.hasOwnProperty(key)) {
+    // if (lms.hasOwnProperty(key)) {
+    if (Object.prototype.hasOwnProperty.call(lms, key)) {
       Object.defineProperty(Vue.prototype, key, {
         get () { return lms[key] }
       })

@@ -252,7 +252,8 @@ export default {
       handler (val) {
         let params = {}
         for (const key in val) {
-          if (val.hasOwnProperty(key)) {
+          // if (val.hasOwnProperty(key)) {
+          if (Object.prototype.hasOwnProperty.call(val, key)) {
             if (val[key] && val['datePicker']) {
               params[key] = val[key]
             }

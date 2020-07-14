@@ -33,7 +33,8 @@ export default {
       let matched = this.$route.matched
       let res = []
       for (const key in matched) {
-        if (matched.hasOwnProperty(key)) {
+        // if (matched.hasOwnProperty(key)) {
+        if (Object.prototype.hasOwnProperty.call(matched, key)) {
           const element = matched[key]
           const title = element.meta.title
           // if (!title) {

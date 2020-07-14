@@ -138,7 +138,8 @@ class LayerManager {
     }
     layers = this.layers[type]._layers
     for (const key in layers) {
-      if (layers.hasOwnProperty(key)) {
+      // if (layers.hasOwnProperty(key)) {
+      if (Object.prototype.hasOwnProperty.call(layers, key)) {
         const element = layers[key]
         if (String(element.feature.properties.id) === String(id)) {
           layer = element

@@ -28,12 +28,14 @@ function info (data) {
 }
 
 function httpError (data) {
-  if (data.hasOwnProperty('response')) {
+  // if (data.hasOwnProperty('response')) {
+  if (Object.prototype.hasOwnProperty.call(data, 'response')) {
     if (data.response.status === 403) {
       return
     }
   }
-  if (data.hasOwnProperty('code')) {
+  // if (data.hasOwnProperty('code')) {
+  if (Object.prototype.hasOwnProperty.call(data, 'code')) {
     if (data.code !== 0) {
       let _msg = data.code > 0 ? data.msg : data.msg // code2msg(data)
       this.context.$message({ type: 'error', message: _msg })

@@ -39,7 +39,8 @@ function configOptions (inputOptions, defaultOptions) {
   }
 
   for (var i in defaultOptions) {
-    if (!inputOptions.hasOwnProperty(i)) {
+    // if (!inputOptions.hasOwnProperty(i)) {
+    if (!Object.prototype.hasOwnProperty.call(inputOptions, i)) {
       inputOptions[i] = defaultOptions[i]
     }
   }

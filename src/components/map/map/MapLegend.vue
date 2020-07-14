@@ -57,7 +57,8 @@ export default {
         let group = this.legend.group[e].items
         let status = false
         for (const key in group) {
-          if (group.hasOwnProperty(key)) {
+          // if (group.hasOwnProperty(key)) {
+          if (Object.prototype.hasOwnProperty.call(group, key)) {
             if (this.getLayerStatus(key)) {
               status = true
             }
@@ -92,7 +93,8 @@ export default {
     initSwitchStatus () {
       let group = this.legend.group
       for (const key in group) {
-        if (group.hasOwnProperty(key)) {
+        // if (group.hasOwnProperty(key)) {
+        if (Object.prototype.hasOwnProperty.call(group, key)) {
           Vue.set(this.switchStatus, key, true)
         }
       }
